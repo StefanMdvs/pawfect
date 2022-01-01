@@ -49,3 +49,4 @@ The user should find the application easy to navigate, intuitive and responsive,
 | 16            |                 | Write blog posts about products            | Inform customers about products and dogs wellbeing       |
 
 ## 2.2 Wireframes
+Full width wireframes for mobile, tablet and desktop can be accessed **[here](wireframes)**.
