@@ -10,7 +10,8 @@
 [**2. UX**](#2-ux)  
 - [2.1 User Stories](#21-user-stories)  
 - [2.2 Wireframes](#22-wireframes) 
-- [2.3 Design](#23-design) 
+- [2.3 Database schema](#23-database-schema) 
+- [2.4 Design](#24-design) 
 
 [**3. Features**](#3-features) 
 - [3.1 Existing features](#31-existing-features)  
@@ -50,3 +51,7 @@ The user should find the application easy to navigate, intuitive and responsive,
 
 ## 2.2 Wireframes
 Full width wireframes for mobile, tablet and desktop can be accessed **[here](wireframes)**.
+
+## 2.3 Database schema
+Giving the relations between tables the project uses a relational database, with SWLite being used in development and Postgress in production. The relation between tables can be observed in the diagram below:
+![DB diagram](wireframes/db-diagram.png)
