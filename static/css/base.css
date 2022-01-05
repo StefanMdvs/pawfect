@@ -1,0 +1,50 @@
+:root {
+    --ruby: #9d2646;
+    --mint: #f4fff8;
+    --green: #214e34;
+  }
+
+html {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    /* might need to substract the header height */
+    flex-direction: column;
+    font-family: 'Aleo';
+
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header, footer {
+    background-color: var(--mint);
+}
+
+.logo-font {
+    color: var(--ruby);
+    background-color: var(--mint);
+}
+
+.background {
+    color: var(--mint);
+    background-color: var(--ruby);
+}
+
+.text-mint {
+    color: var(--mint);
+}
+
+footer i {
+    color: var(--ruby);
+}
