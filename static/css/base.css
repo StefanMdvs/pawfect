@@ -36,6 +36,11 @@ body {
     background-color: var(--mint);
 }
 
+#delivery-banner {
+    background-color: var(--ruby);
+    color: var(--mint);
+}
+
 .background {
     color: var(--mint);
     background-color: var(--ruby);
