@@ -103,6 +103,14 @@ body {
     color: var(--mint);
 }
 
+.text-ruby {
+    color: var(--ruby);
+}
+
+hr {
+    border-top: 1px solid var(--ruby);
+}
+
 footer i {
     color: var(--ruby);
 }
@@ -169,6 +177,17 @@ footer i {
         padding: .25rem .5rem !important;
     /* } */
 /* } */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 
 @media (min-width: 320px) {
     #delivery-banner h4 {
