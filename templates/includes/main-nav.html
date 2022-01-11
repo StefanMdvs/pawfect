@@ -13,9 +13,9 @@
                 Essentials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="essentials-link">
-                <a href="#" class="dropdown-item">Beds</a>
-                <a href="#" class="dropdown-item">Dog Bowls</a>
-                <a href="#" class="dropdown-item">Grooming</a>
+                <a href="{% url 'products' %}?category=beds" class="dropdown-item">Beds</a>
+                <a href="{% url 'products' %}?category=dog_bowls" class="dropdown-item">Dog Bowls</a>
+                <a href="{% url 'products' %}?category=grooming" class="dropdown-item">Grooming</a>
             </div>
         </li>
 
@@ -24,10 +24,10 @@
                 Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
-                <a href="#" class="dropdown-item">Plush</a>
-                <a href="#" class="dropdown-item">Throwing</a>
-                <a href="#" class="dropdown-item">Chew</a>
-                <a href="#" class="dropdown-item">Squeaky</a>
+                <a href="{% url 'products' %}?category=plush" class="dropdown-item">Plush</a>
+                <a href="{% url 'products' %}?category=throwing" class="dropdown-item">Throwing</a>
+                <a href="{% url 'products' %}?category=chew" class="dropdown-item">Chew</a>
+                <a href="{% url 'products' %}?category=squeaky" class="dropdown-item">Squeaky</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -35,10 +35,10 @@
                 Walking
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="walking-link">
-                <a href="#" class="dropdown-item">Collars</a>
-                <a href="#" class="dropdown-item">Leads</a>
-                <a href="#" class="dropdown-item">Harness</a>
-                <a href="#" class="dropdown-item">Safety</a>
+                <a href="{% url 'products' %}?category=collars" class="dropdown-item">Collars</a>
+                <a href="{% url 'products' %}?category=leads" class="dropdown-item">Leads</a>
+                <a href="{% url 'products' %}?category=harness" class="dropdown-item">Harness</a>
+                <a href="{% url 'products' %}?category=safety" class="dropdown-item">Safety</a>
             </div>
         </li>
     </ul>
