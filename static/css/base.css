@@ -88,6 +88,8 @@ body {
     background: transparent;
 }
 
+
+
 /* .header-container {
     right: 0;
     margin: 0;
@@ -106,6 +108,17 @@ body {
 .text-ruby {
     color: var(--ruby);
 }
+
+.btn-outline-ruby {
+    border: 1px solid var(--ruby);
+}
+
+.btn-outline-ruby:hover {
+    color: #fff;
+    background-color: var(--ruby);
+    border: 1px solid var(--ruby);
+}
+
 
 hr {
     border-top: 1px solid var(--ruby);
