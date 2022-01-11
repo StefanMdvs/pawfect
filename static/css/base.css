@@ -108,8 +108,11 @@ body {
 .text-ruby {
     color: var(--ruby);
 }
+.border-ruby {
+    border: 1px solid var(--ruby)!important;
+}
 
-.btn-outline-ruby {
+.btn-outline-ruby, #sort-selector {
     border: 1px solid var(--ruby);
 }
 
