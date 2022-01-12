@@ -10,7 +10,22 @@
 {% endblock %}
 
 {% block content %}
-
+    <div class="overlay"></div>
+    <div class="row">
+        <div class="col mt-3 mt-lg-5">
+            <h2 class="text-ruby text-center mb-4">Shopping Bag</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+                <div class="table-responsive rounded"></div>
+            {% else %}
+                <p class="text-center">Oh, no! Your bag is empty. Time to go shopping!</p>
+                <p class="text-center"><i class="fas fa-shopping-cart"></i></p>
+            {% endif %}
+        </div>
+    </div>
 
 {% endblock %}
 
