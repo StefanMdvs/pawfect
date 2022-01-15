@@ -149,6 +149,29 @@ footer i {
     object-fit: contain;
 }
 
+/* toasts */
+
+.message-container {
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    min-width: 218px;
+    z-index: 99999999999;
+}
+
+.toast-header {
+    border-bottom: 1px solid var(--ruby);
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
 @media (min-width: 992px) {
     /* .fixed-top-desktop-only {
         position: fixed;
