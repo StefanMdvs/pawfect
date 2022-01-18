@@ -26,7 +26,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-6">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">&pound{{ product.price }}</p>
@@ -105,19 +105,17 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-12">
-                                <div class="col{% if s %}-12 mt-2{% endif %}">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-ruby rounded-0 mt-5">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Shop more</span>
-                                    </a>
-                                    <input type="submit" class="btn btn-ruby rounded-0 text-uppercase mt-5" value="Add to Bag">
-                                </div>
-                                
+                            
+                            <div class="col{% if s %}-12 mt-2{% endif %} clear-footer">
+                                <a href="{% url 'products' %}" class="btn btn-outline-ruby mt-5">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Shop more</span>
+                                </a>
+                                <input type="submit" class="btn btn-ruby text-uppercase mt-5" value="Add to Bag">
                             </div>
+                                
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>

@@ -19,7 +19,7 @@
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive rounded">
-                    <table class="table table-sm table-borderless">
+                    <table class="table table-sm table-borderless clear-footer">
                         <thead class="text-black">
                             <tr>
                                 <th scope="col"></th>
@@ -104,13 +104,13 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">
+                                <a href="{% url 'products' %}" class="btn btn-outline-ruby btn-lg">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <a href="{% url 'checkout' %}" class="btn btn-black btn-lg">
+                                <a href="{% url 'checkout' %}" class="btn btn-ruby btn-lg">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>
