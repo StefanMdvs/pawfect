@@ -76,45 +76,45 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0"><strong>{{ order.full_name }}</strong></p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.street_address1 }}</p>
                         </div>
                     </div>
 
                     {% if order.street_address2 %}
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.street_address2 }}</p>
                         </div>
                     </div>
                     {% endif %}
                     {% if order.county %}
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.county }}</p>
                         </div>
                     </div>
                     {% endif %}
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.town_or_city }}</p>
                         </div>
                     </div>
                     {% if order.postcode %}
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.postcode }}</p>
                         </div>
                     </div>
                     {% endif %}
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0">{{ order.country }}</p>
                         </div>
                     </div>
@@ -124,12 +124,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0"><span><i class="fas fa-phone text-ruby"></i></span> {{ order.phone_number }}</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8">
                             <p class="mb-0"><span><i class="fas fa-envelope text-ruby"></i></span> {{ order.email }}</p>
                         </div>
                     </div>
@@ -170,8 +170,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-7 text-right">
-                <a href="{% url 'products' %}" class="btn btn-outline-ruby my-2">
+            <div class="col-12 col-lg-7 text-right clear-footer">
+                <a href="{% url 'products' %}" class="btn btn-ruby my-2">
                     <span class="icon mr-2">
                         <i class="fas fa-gifts"></i>
                     </span>

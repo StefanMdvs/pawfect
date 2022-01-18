@@ -149,6 +149,10 @@ footer i {
     object-fit: contain;
 }
 
+.clear-footer {
+    margin-bottom: 6.25rem;
+}
+
 /* toasts */
 
 .message-container {
