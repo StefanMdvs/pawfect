@@ -8,23 +8,14 @@ html {
     height: 100%;
 }
 
-
-
-
 body {
-    /* display: flex; */
     min-height: 100vh;
     background: url('/media/walking.jpg') no-repeat 30% 80% fixed;
     background-size: cover;
-    /* might need to substract the header height */
-    /* flex-direction: column; */
     font-family: 'Aleo';
-    /* object-fit: cover;  */
-    /* object-position: 100% 0; */
 }
 
 #home {
-    /* background: url('/media/walking.jpg') no-repeat center center fixed; */
     display: table;
     height: 100%;
     position: relative;
@@ -88,13 +79,9 @@ body {
     background: transparent;
 }
 
-
-
-/* .header-container {
-    right: 0;
-    margin: 0;
-    padding-top: 164px;
-} */
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
 
 .background {
     color: var(--mint);
@@ -159,7 +146,6 @@ footer i {
     position: fixed;
     top: 120px;
     right: 15px;
-    /* min-width: 218px; */
     z-index: 99999999999;
 }
 
@@ -224,6 +210,60 @@ footer i {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0.25rem;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: var(--ruby);
+    border: 1px solid var(--ruby);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: var(--ruby);
+    background-color: #fff;
+    border-color: var(--ruby);
+}
+
+.allauth-form-inner-content a {
+	color: var(--ruby);
 }
 
 @media (min-width: 992px) {
