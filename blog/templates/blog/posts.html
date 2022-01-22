@@ -10,25 +10,32 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container pb-5 clear-footer">
         <div class="row">
-            <div class="col">
-                <h3>Welcome to the blog section!</h3>
-                <p>Here you can find more about our products, such as how to choose sizes, how to take care of them and so on! Have a look around.</p>
+            <div class="col mt-3 mt-lg-5">
+                <hr>
+                <h3 class="text-ruby text-center">Welcome to the blog section!</h3>
+                <hr>
+                <p class="py-2">Here you can find more about our products, such as how to choose sizes, how to take care of them and so on! Have a look around.</p>
             </div>
         </div>
-        <div class="row">
-            <!-- Blog entries -->
-            {% for post in object_list %}
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                </div>
+        <div class="container pb-5">
+            <div class="row">
+                <!-- Blog entries -->
+                {% for post in object_list %}
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                                <p class="card-text text-muted h6">By: {{ post.author }} | {{ post.created_on}} </p>
+                                <p class="card-text">{{post.body|slice:":200" }}</p>
+                                <a href="{% url 'post_detail' post.slug  %}" class="btn btn-ruby">Read More &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="clear-footer"></div>
             </div>
-            {% endfor %}
         </div>
     </div>
 
