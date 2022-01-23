@@ -126,8 +126,11 @@
                 </div>
                 </div>
             {% else %}
+            <div class="col text-center">
                 <p class="text-center">Oh, no! Your bag is empty. Time to go shopping!</p>
-                <p class="text-center"><i class="fas fa-shopping-cart"></i></p>
+                <a href="{% url 'products' %}" class="btn btn-lg btn-outline-ruby text-uppercase"><i class="fas fa-shopping-cart"></i> To Products</a>
+            </div>
+                
             {% endif %}
         </div>
     </div>
