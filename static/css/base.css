@@ -316,6 +316,8 @@ footer i {
 
 /* media queries */
 
+
+
 @media (min-width: 320px) {
     .nav-link {
         padding: 0.15rem;
@@ -344,6 +346,23 @@ footer i {
     }
     #delivery-banner h4 {
         font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .btn.btn-outline-ruby,
+    .btn.btn-ruby {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+    .btn.btn-outline-ruby.btn-lg,
+    .btn.btn-ruby.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
 
