@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block extra_title %}|{{ post.title }}{% endblock %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -12,13 +13,13 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container pb-5 clear-footer">
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-md-8 card mb-5 mt-3 mt-lg-5 mx-auto">
                 <div class="card-body">
-                    <h1>{{ object.title }}</h1>
+                    <h1>{{ post.title }}</h1>
                     <p class=" text-muted">By: {{ post.author }} | {{ post.created_on }}</p>
                     <hr>
-                    <p class="card-text">{{ object.body | safe }}</p>
+                    <p class="card-text">{{ post.body | safe }}</p>
                 </div>
                 <div class="container py-2">
                     <a href="{% url 'posts' %}" class="btn btn-outline-ruby float-right" role="button">
@@ -29,6 +30,34 @@
                     </a>
                 </div>
             </div>
+            <div class="col-md-8 card mx-auto">
+                <div class="card-body">
+                  <!-- comments -->
+                  <h2 class="text-ruby">{{comments.count}} comments</h2>
+                  {% for comment in comments %}
+                  <div class="comments">
+                    <p class="font-weight-bold">
+                      {{ comment.name }}
+                      <span class=" text-muted font-weight-normal">
+                        | {{ comment.created_on }}
+                      </span>
+                    </p>
+                    {{ comment.body | linebreaks }}
+                  </div>
+                  <hr>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="col-md-8 card mt-3 mx-auto">
+                <div class="card-body">
+                  <h3>Leave a comment</h3>
+                  <form method="post">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-ruby btn-lg">Submit</button>
+                  </form>
+                </div>
+              </div>
         </div>
     </div>
 
