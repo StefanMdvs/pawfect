@@ -88,5 +88,49 @@ Icons used bear the colour of the elements they precede or they use the same Rub
 **Shadow**  
 To highlight each individual product, the card element has a shadow effect which makes them stand out and also border the elements with a white backround.  
 
+# 3. Features 
+## 3.1 Existing features
+Across the website:  
+**Responsive**  
+The website displays well across all devices thanks to Bootstrap's grid system.  
+**Custom Navbar**  
+Navbar provides user with quick access to key pages. On mobile view there's a navbar toggler along with the search and user icons and the shopping bag. On large screens the navbar menu is displayed with dropdown for various categories.  
+**Search bar**  
+Provides quick access to the database and makes queries to the product name and description.  
+**Toasts**  
+Provides feedback for user action, such as adding products to the bag or updating it.  
+**Home Page**  
+Home page has a call to action button and displays a hero image.  
+**Products Page**  
+Displays all the products and has the following features:
+- **Sorting** the products based on price, rating, name and category
+- **Displaying** the essential info about a product (Name, price, category and rating)
+- **Edit/Delete** option for admin  
 
+**Product Detail Page**  
+- **Displays** details about a product and includes a descprition along with the details presented on Products page
+- **Quantity** input form for user to select the desired quantity
+- **Size** selector for products that have sizes
+- **Edit/Delete** option for admin  
+
+**Shopping bag**  
+- **Displays** individual lines for each product with essential info (image, name, size if any, price and subtotal)
+- **Quantity** input form for user to update product quantity
+- **Delete** button if user wants to remove an item
+- **Price** info displaying the total, delivery costs and Grand total  
+
+**Checkout**  
+- **Form** to fill in for delivery details
+- **Displays** order summary
+- **Payment** handled by Stripe
+- **Form prefill** for registered users
+- **Save details** option for future deliveries  
+
+**Checkout success**  
+- **Confirmation** of the order being received with Order info, Delivery and contact details being displayed along with the Total.
+
+
+
+
+## 3.2 Features to add
 
