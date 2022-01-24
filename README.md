@@ -69,4 +69,24 @@ The model is used to save information about users in order to speed up the check
 **Post**  
 This model helps admin to create Blog posts and holds as attributes a name, a slug that helps create individual urls, the author, the body where the actual content will go and information about the date is was posted/updated.  
 **Comment**  
-Holds information about the user along with the text content and requires the admin to approve the comments in order to prevent spam. It also has a ForeignKey to Post so that the comment gets attached to the relevant Blog post.
+Holds information about the user along with the text content and requires the admin to approve the comments in order to prevent spam. It also has a ForeignKey to Post so that the comment gets attached to the relevant Blog post.  
+## 2.4 Design
+**Color scheme**  
+The project uses the following colors:
+- ![#9d2646](https://via.placeholder.com/15/9d2646/000000?text=+) #9d2646 (ruby)  
+and
+- ![#f4fff8](https://via.placeholder.com/15/f4fff8/000000?text=+) #f4fff8 (mint green)  
+
+The main color is ruby and can be found across the website on either the background of the elements or as a font color for header elements. 
+The mint green is only used as a background color for header and footer and helps to make the transition from those elements to the page content.  
+**Font**  
+The project uses *Aleo* throughout the website for consistency.  
+**Buttons**  
+A variation between background and border has been used using the Ruby color in order to highlight various actions.  
+**Icons**  
+Icons used bear the colour of the elements they precede or they use the same Ruby colour.  
+**Shadow**  
+To highlight each individual product, the card element has a shadow effect which makes them stand out and also border the elements with a white backround.  
+
+
+
