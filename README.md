@@ -1,8 +1,8 @@
 # Pawfect!
-![mockup image](static/images/mockup.png)
+![mockup image](media/mockup.png)
 *Accessories for everybody's best friend*
 
-**[Live demo](link-to-follow)**
+**[Live demo](https://pawfect-sm.herokuapp.com/)**
 
 ---
 [**Index**](#up)  
@@ -183,6 +183,8 @@ Project uses Amazon S3 bucket to store static files and images.
 - [Google Fonts](https://fonts.google.com/)
 - [Mockup generator](http://techsini.com/multi-mockup/index.php)
 
+# 5. Testing 
+Details about this section can be found [here](TESTING.md).
 
 
 
