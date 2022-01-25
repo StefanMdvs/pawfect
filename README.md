@@ -127,10 +127,24 @@ Displays all the products and has the following features:
 - **Save details** option for future deliveries  
 
 **Checkout success**  
-- **Confirmation** of the order being received with Order info, Delivery and contact details being displayed along with the Total.
+- **Confirmation** of the order being received with Order info, Delivery and contact details being displayed along with the Total.  
 
+**Profile**
+- **Registered** users can update their delivery information and see their order history
+- **Admin** can perform add/edit operations on products  
 
+**CRUD functionality**  
+- **Create**: all users can create a comment on blog posts; Admin only can create new products and Blog posts
+- **Read**: all users can see details about products and read blog articles
+- **Update**: reserved to registered users, they can update their profile info. On top of that, admin can update products and Blog posts
+- **Delete**: Admin can delete products, Blog posts and comments.
 
+**Access protection**  
+```@login_required``` decorator was used to ensure non-super-users cannot interfere with the database.  
+**Static and image file hosting**  
+Project uses Amazon S3 bucket to store static files and images.  
+**404 and 500 error handling** to keep user on website and minimize disruption.
 
 ## 3.2 Features to add
-
+- Functionality to add a product to a **wish list**
+- Suggestions regarding **related products**
