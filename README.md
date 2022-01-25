@@ -148,3 +148,42 @@ Project uses Amazon S3 bucket to store static files and images.
 ## 3.2 Features to add
 - Functionality to add a product to a **wish list**
 - Suggestions regarding **related products**
+
+# 4. Technologies used
+**Languages**
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python](https://www.python.org/)
+
+**Frameworks**
+- [Bootstrap](https://getbootstrap.com/)
+- [Django](https://www.djangoproject.com/)
+- [jQuery](https://jquery.com/)
+
+**Database**
+- [Heroku Postgres](https://www.heroku.com/postgres)
+
+**Extensions**
+- [Stripe](https://stripe.com/docs)
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+- [Pillow](https://pillow.readthedocs.io/en/stable/)
+
+**Project Management**
+- [Balsamiq](https://balsamiq.com/wireframes/)
+- [GitPod](https://gitpod.io/workspaces)
+- [GitHub](https://github.com/)
+- [Amazon AWS](https://aws.amazon.com/) (S3)
+
+**Tools**
+- [DB Diagram](https://dbdiagram.io/home)
+- [Favicon.io](https://favicon.io//)  
+- [Panda image compression](https://tinypng.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Mockup generator](http://techsini.com/multi-mockup/index.php)
+
+
+
+
+
