@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %} - 404{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container clear-footer pt-2 pt-lg-5">
+    <div class="col-12 col-lg-7 pt-0 pt-lg-5">
+        <h1>Oops! Page not found!</h1>
+        <div>
+            <a href="{% url 'products' %}" class="btn btn-outline-ruby mt-2">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                Back to Products!
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
