@@ -32,3 +32,25 @@ As a ***business owner*** I want to be able to:
 - **View, add, update and delete products**: Admin has access to all the products and can perform all CRUD operations.
 - **Write blog posts about products**: Admin can write and update blog posts as well as approve/delete comments on blog posts.
 
+# 2. Manual testing
+**Navigation**
+| Test                                    | Action                                        | Result                                                               | Bugs |
+|-----------------------------------------|-----------------------------------------------|----------------------------------------------------------------------|------|
+| Nav links change colour on hover        | Hover over elements                           | Nav links change colour to Ruby                                      |      |
+| Website logo sends user to home page    | Click on logo                                 | Redirects user to home page                                          |      |
+| Dropdown menu works                     | Click on dropdown and see relevant categories | User redirected to categories                                        |      |
+| Click on category tag displays products | Click on tag                                  | Products from the same category are displayed                        |      |
+| Search bar returns query                | Input query                                   | The query is returned with the number of products found or 0 if none |      |
+| My account(logged-out)                  | Click on My Account                           | Unregistered users can only see Register and Login as options        |      |
+| My account(logged-in)                   | Click on My Account                           | Logged in user can see My Profile and Logout links                   |      |
+| My account(logged-in as superuser)      | Click on My Account                           | Superuser can see Product Management, My Profile and Logout links    |      |
+| Bag                                     | Click on bag                                  | Sends user to Shopping bag page                                      |      |
+
+**Footer**
+| Test                       | Action                               | Result                      | Bugs |
+|----------------------------|--------------------------------------|-----------------------------|------|
+| Footer stays to the bottom | Check footer on each individual page | Footer sticks to the bottom |      |
+| Check social links open    | Click each icon                      | Icons open in a new tab     |      |
+
+Product cards open to show details
+Cards open to show product details
