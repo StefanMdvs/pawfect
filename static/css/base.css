@@ -20,7 +20,7 @@ body {
     position: relative;
     width: 100%;
     background-size: cover;
-    padding-top: 200px;
+    padding-top: 280px;
 }
 .landing-text {
     display: table-cell;
@@ -28,7 +28,7 @@ body {
     right: 1.25rem;
     text-align: center;
     vertical-align: bottom;
-    padding-top: 150px;
+    padding-top: 280px;
     
 }
 
@@ -331,9 +331,6 @@ footer i {
 }
 
 /* media queries */
-
-
-
 @media (min-width: 320px) {
     .nav-link {
         padding: 0.15rem;
@@ -344,17 +341,20 @@ footer i {
         position: relative;
         width: 100%;
         background-size: cover;
-        padding-top: 200px;
+        padding-top: 0;
     }
     .landing-text {
         display: table-cell;
         position: absolute;
         right: 1.25rem;
-        text-align: center;
+        text-align: right; 
         vertical-align: bottom;
+        padding-top: 180px;
+        font-size: .75rem;
+        
     }
     .header-container {
-        padding-top: 110px;
+        padding-top: 250px;
     }
     footer {
         margin: 0;
@@ -362,8 +362,7 @@ footer i {
     }
     #delivery-banner h4 {
         font-size: 1rem;
-    }
-    
+    }   
 }
 
 @media (max-width: 991px) {
@@ -382,12 +381,47 @@ footer i {
     }
 }
 
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+        background: url('/media/walking.jpg') no-repeat 30% 20% fixed;
+        background-size: cover;
+        font-family: 'Aleo';
+    }
+    .landing-text {
+        display: table-cell;
+        position: absolute;
+        right: 1.25rem;
+        text-align: right; 
+        vertical-align: bottom;
+        padding-top: 180px;
+        font-size: 1rem;
+        
+    }
+}
+
 @media (min-width: 992px) {
     body {
         min-height: 100vh;
         background: url('/media/walking.jpg') no-repeat 30% 0% fixed;
         background-size: cover;
         font-family: 'Aleo';
+    }
+    #home {
+        display: table;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        padding-top: 0;
+    }
+    .landing-text {
+        display: table-cell;
+        position: absolute;
+        right: 1.25rem;
+        text-align: center;
+        vertical-align: bottom;
+        padding-top: 250px;
     }
     .landing-text h1 {
         font-size: 5em;
@@ -398,7 +432,36 @@ footer i {
     #delivery-banner h4 {
         font-size: 1.2rem;
     }
-    
 }
+
+@media (orientation: landscape) and (min-width: 1023px) {
+    body {
+        min-height: 100vh;
+        background: url('/media/walking.jpg') no-repeat 30% 0% fixed;
+        background-size: cover;
+        font-family: 'Aleo';
+    }
+    #home {
+        display: table;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        padding-top: 0;
+    }
+    .landing-text {
+        display: table-cell;
+        position: absolute;
+        right: 1.25rem;
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .header-container {
+        padding-top: 0;
+    }
+}
+
+
+
 
 
