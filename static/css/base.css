@@ -1,7 +1,6 @@
 :root {
     --ruby: #9d2646;
     --mint: #f4fff8;
-    --green: #214e34;
   }
 
 html {
@@ -22,7 +21,6 @@ body {
     width: 100%;
     background-size: cover;
     padding-top: 200px;
-
 }
 .landing-text {
     display: table-cell;
@@ -45,6 +43,11 @@ body {
 
 .landing-text h3 {
     font-size: 1.5em;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+    color: var(--ruby) !important
 }
 
 .overlay {
