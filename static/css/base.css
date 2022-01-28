@@ -50,6 +50,13 @@ body {
     color: var(--ruby) !important
 }
 
+/* overwrite default blue background */
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -93,9 +100,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-ruby:hover,
+.btn-ruby:active,
+.btn-ruby:focus {
     background: #fff;
     color: var(--ruby);
     border: 1px solid var(--ruby);
@@ -129,11 +136,11 @@ input[name='q']::placeholder {
     background-color: var(--ruby);
 }
 
-.btn-ruby:hover {
+/* .btn-ruby:hover {
     color: #fff;
     background-color: #CF3A62;
     border: 1px solid #CF3A62;
-}
+} */
 
 .btn-outline-ruby, #sort-selector {
     border: 1px solid var(--ruby);
@@ -143,6 +150,13 @@ input[name='q']::placeholder {
     color: #fff;
     background-color: var(--ruby);
     border: 1px solid var(--ruby);
+}
+
+/* overwrite default button focus */
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem var(--ruby);
 }
 
 hr {
@@ -354,7 +368,7 @@ footer i {
         
     }
     .header-container {
-        padding-top: 250px;
+        padding-top: 150px;
     }
     footer {
         margin: 0;
@@ -373,7 +387,7 @@ footer i {
     }
     .btn.btn-outline-ruby.btn-lg,
     .btn.btn-ruby.btn-lg {
-        padding: .375rem .375rem;
+        padding: .5rem .5rem;
         font-size: .75rem;
     }
     .increment-qty, .decrement-qty {
@@ -457,7 +471,7 @@ footer i {
         vertical-align: bottom;
     }
     .header-container {
-        padding-top: 0;
+        padding-top: 150px;
     }
 }
 
