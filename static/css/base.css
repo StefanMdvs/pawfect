@@ -61,6 +61,17 @@ body {
     background-color: whitesmoke;
 }
 
+/* li padding on mobile view */
+.list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 1px dotted;
+    outline: 5px auto var(--ruby);
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
