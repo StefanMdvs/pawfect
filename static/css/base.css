@@ -34,7 +34,6 @@ body {
 
 .landing-text h1, h3 {
     font-weight: 700;
-    text-shadow: #000;
 }
 
 .landing-text h1 {
@@ -155,11 +154,14 @@ input[name='q']::placeholder {
     background-color: var(--ruby);
 }
 
-/* .btn-ruby:hover {
-    color: #fff;
-    background-color: #CF3A62;
-    border: 1px solid #CF3A62;
-} */
+.btn-black:hover {
+    background-color: var(--mint);
+    color: var(--ruby);
+}
+
+.remove-item, .text-danger {
+    cursor: pointer;
+}
 
 .btn-outline-ruby, #sort-selector {
     border: 1px solid var(--ruby);
@@ -169,6 +171,12 @@ input[name='q']::placeholder {
     color: #fff;
     background-color: var(--ruby);
     border: 1px solid var(--ruby);
+}
+
+.custom-select:focus {
+    border-color: var(--ruby);
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem var(--ruby);
 }
 
 /* overwrite default button focus */
@@ -207,6 +215,16 @@ footer i {
 
 .clear-footer {
     margin-bottom: 6.25rem;
+}
+
+/* form control */
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--ruby);
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem var(--ruby);
 }
 
 /* reduce size to fit on small devices */
