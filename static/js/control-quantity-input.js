@@ -48,6 +48,7 @@ $('.increment-qty').click(function(e) {
    handleEnableDisable(itemId, size);
 });
 
+
 // Decrement quantity
 $('.decrement-qty').click(function(e) {
    e.preventDefault();

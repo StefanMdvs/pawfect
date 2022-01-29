@@ -149,7 +149,8 @@
     <script>
         // Update quantity on click
         $('.update-link').click(function(e) {
-            var form = $('.update-form');
+            var form = $(this).closest('.update-form');
+            console.log(e.target)
             form.submit();
         })
 
