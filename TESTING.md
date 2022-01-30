@@ -52,5 +52,92 @@ As a ***business owner*** I want to be able to:
 | Footer stays to the bottom | Check footer on each individual page | Footer sticks to the bottom |      |
 | Check social links open    | Click each icon                      | Icons open in a new tab     |      |
 
-Product cards open to show details
-Cards open to show product details
+**Home Page**
+| Test                              | Action                                 | Result                               | Bugs |
+|-----------------------------------|----------------------------------------|--------------------------------------|------|
+| Hero image displays well          | Check on Google Chrome developer tools | Image is showing well on all devices |      |
+| Text is visible and clears footer | Resize window                          | Text is visible                      |      |
+| Check shop now button works       | Click on button                        | Takes user to Products page          |      |
+|                                   |                                        |                                      |      |
+
+**Products Page**
+| Test                      | Action                            | Result                                      | Bugs |
+|---------------------------|-----------------------------------|---------------------------------------------|------|
+| Products are displayed    | Go on products page               | Total numbers of products shown             |      |
+| Image is displayed        | Scroll down to check all products | Image is visible or the default image shows |      |
+| Check sort selector works | Select each individual option     | Products are displayed accordingly          |      |
+
+**Product detail Page**
+| Test                                                    | Action                                                      | Result                                                                                    | Bugs |
+|---------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------|------|
+| Relevant fields are displayed                           | Click on a product                                          | Fields are in place displaying relevant information                                       |      |
+| Size selector changes according to the product category | Click on products from Beds, Collars and Harness Categories | For Beds sizes are S-XL and for the other two S-L                                         |      |
+| Quantity input field                                    | Check the value can't be outside the 1-99 range             | Form control works, user is asked to input a value greater than 0 and less or equal to 99 |      |
+| Shop More button                                        | Click                                                       | Takes user to Products page                                                               |      |
+| Add to Bag button                                       | Click                                                       | Adds selected product/size in the bag                                                     |      |
+| Bag updates total                                       | Add to bag                                                  | Total updates and toast message shows Success                                             |      |
+
+![form-validation](wireframes/testing-images/form-control.png)
+
+**Shopping Bag Page**
+| Test                   | Action                                        | Result                                     | Bugs                                |
+|------------------------|-----------------------------------------------|--------------------------------------------|-------------------------------------|
+| Products are displayed | Click on Bag icon                             | Products are displayed on individual lines |                                     |
+| Same product with different sizes is displayed individually | Check line item                              | Products with different sizes are displayed on individual lines |                                     |
+| Update quantity        | Click on arrows to increase/decrease quantity | Only the last added item can be updated    | Can't update quantity for all items* |
+| Delete line item       | Click red bin icon                            | Item is removed from the shopping bag      |                                     |
+| Keep shopping button   | Click                                         | Takes user to Products page                |                                     |
+| Secure checkout button | Click                                         | Takes user to Checkout page                |                                     |
+
+* Bug was fixed by adding the `closest()` method to make sure the right form was updated if more than one form existed in the shopping bag.
+![form-validation](wireframes/testing-images/shopping-bag.png)
+
+**Checkout Page**
+| Test                                                            | Action                         | Result                                                  | Bugs |
+|-----------------------------------------------------------------|--------------------------------|---------------------------------------------------------|------|
+| Order summary displays the same amount of items as shopping bag | Compare Bag with Checkout page | Same products displayed                                 |      |
+| Form is prefilled                                               | Check form                     | If user is logged in, form is prefilled with saved info |      |
+| Confirm Stripe webhook proccessed order                         | Check Stripe Webhooks          | Order is processed                                      |      |
+
+
+![form-validation](wireframes/testing-images/stripe-wh.png)
+
+**Profile Page**
+| Test                             | Action                           | Result                            | Bugs |
+|----------------------------------|----------------------------------|-----------------------------------|------|
+| Update details                   | Change any field                 | Account details are updated       |      |
+| Check order history is displayed | Login and go to My Profile page  | Order history is displayed        |      |
+| View past orders                 | Click on Order number            | Detailed order is being displayed |      |  
+
+![form-validation](wireframes/testing-images/profile-info.png)
+
+**Add/Edit Product**
+| Test                                     | Action                    | Result                                                         | Bugs |
+|------------------------------------------|---------------------------|----------------------------------------------------------------|------|
+| Access Add/Edit Product                  | Manual input url          | Page redirects to Sign In if user is not authenticated         |      |
+| Access Add/Edit Product                  | Sign in as any user       | User is redirected to Home page and Error message is displayed |      |
+| Check new/updated product is in database | Check product detail page | Product details can be seen                                    |      |
+
+**Delete a Product**
+| Test                                   | Action      | Result                                         | Bugs |
+|----------------------------------------|-------------|------------------------------------------------|------|
+| Delete a product                       | Click       | Delete modal pops-up and asks for confirmation |      |
+| Check product is removed from database | Go to admin | Product is removed                             |      |
+
+**Add/Edit Blog post**
+| Test                              | Action                 | Result                                                         | Bugs                                                            |
+|-----------------------------------|------------------------|----------------------------------------------------------------|-----------------------------------------------------------------|
+| Access Add/Edit Post              | Manual input url       | Page redirects to Sign In if user is not authenticated         |                                                                 |
+| Access Add/Edit Post              | Sign in as any user    | User is redirected to Home page and Error message is displayed |                                                                 |
+| Check new post is in database     | Check post detail page |                                                                | Error when trying to add a blog post using Blog Management link |
+| Check updated post is in database | Check post detail page | Blog post details can be seen                                  |                                                                 |
+
+**Delete Blog post**
+| Test                                | Action                  | Result                                         | Bugs |
+|-------------------------------------|-------------------------|------------------------------------------------|------|
+| Delete a post                       | Click                   | Delete modal pops-up and asks for confirmation |      |
+| Check post is removed from database | Go to admin             | Post is removed                                |      |
+| Users can access delete url         | Sign in as regular user | User redirected to home page                   |      |
+
+# 3. Automated testing  
+
