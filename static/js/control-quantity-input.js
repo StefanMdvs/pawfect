@@ -37,7 +37,6 @@ $('.increment-qty').click(function(e) {
    var itemId = $(this).data('item_id');
    var size = $(this).data('size');
    var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-   console.log(closestInput)
    if (size) {
        var allQuantityInputs = $(`.input-group-${itemId} input[data-size='${size}']`);
     } else {
