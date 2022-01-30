@@ -400,7 +400,6 @@ footer i {
 }
 
 /* media queries */
-/* testing */
 
 @media (min-width: 320px) {
     .nav-link {
@@ -425,7 +424,7 @@ footer i {
     }
     #delivery-banner h4 {
         font-size: 1rem;
-    }   
+    }
 }
 
 @media (min-width: 768px) {
