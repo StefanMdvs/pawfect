@@ -1,3 +1,4 @@
+Back to [README](README.md)  
 
 [**Index**](#up)  
 [**1. User stories**](#1-user-stories)  
@@ -129,8 +130,10 @@ As a ***business owner*** I want to be able to:
 |-----------------------------------|------------------------|----------------------------------------------------------------|-----------------------------------------------------------------|
 | Access Add/Edit Post              | Manual input url       | Page redirects to Sign In if user is not authenticated         |                                                                 |
 | Access Add/Edit Post              | Sign in as any user    | User is redirected to Home page and Error message is displayed |                                                                 |
-| Check new post is in database     | Check post detail page |                                                                | Error when trying to add a blog post using Blog Management link |
+| Check new post is in database     | Check post detail page |                                                                | Error when trying to add a blog post using Blog Management link* |
 | Check updated post is in database | Check post detail page | Blog post details can be seen                                  |                                                                 |
+
+* Bug was fixed by moving the add_post url before the post_detail url, as django was finding this url and trying to assign the slug hence the error.  
 
 **Delete Blog post**
 | Test                                | Action                  | Result                                         | Bugs |
@@ -141,3 +144,36 @@ As a ***business owner*** I want to be able to:
 
 # 3. Automated testing  
 
+Performance is generally better on desktop view, on mobile view the low performance is related to image size. Due to time restraints this issue has not been addressed. Detailed reports can be found [here](wireframes/lighthouse).
+
+**HTML validator**
+- [W3C - HTML](https://validator.w3.org/): no errors
+- [W3C - CSS](https://jigsaw.w3.org/css-validator/): no errors
+- [JS Hint](https://jigsaw.w3.org/css-validator/): no errors
+- [Pep8 compliance](http://pep8online.com/): passed all `.py` files, all errors fixed apart from one error in `views.py` and one in `webhookhandler.py` within checkout app. Lines could not be shortened without making the code illegible.
+
+# 4. Responsiveness  
+
+The website has been tested on Chrome, Safari and Amazon Silk browser.  
+Also, using Google Chrome developer tools, the site was tested on the following devices:  
+
+- iPhone SE
+- iPhone XR
+- iPhone 12 PRO
+- Pixel 5
+- Samsung Galaxy S8
+- Samsung Galaxy S6
+- iPad Air
+- iPad Mini
+- Surface Pro 7
+- Surface Duo
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+
+Real world testing has been done on:
+- iPhone 6
+- Samsung Galaxy S6
+- Samsung Galaxy A5
+- Amazon Fire 10
+- HP i5 laptop
