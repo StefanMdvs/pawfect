@@ -16,6 +16,7 @@ class PostList(ListView):
 def post_detail(request, slug):
     template_name = 'blog/post_detail.html'
     post = get_object_or_404(Post, slug=slug)
+    print(post.slug)
     comments = post.comments.filter(active=True)
     new_comment = None
     # Comment posted
@@ -57,13 +58,12 @@ def add_post(request):
         if form.is_valid():
             post = form.save()
             messages.success(request, 'Successfully added post!')
-            return redirect(reverse('post_detail', args=[post.slug]))
+            return redirect(reverse('posts'))
         else:
             messages.error(
                 request, 'Failed to add blog post. Check if form is valid.')
     else:
         form = PostForm()
-
     template = 'blog/add_post.html'
     context = {
         'form': form,
