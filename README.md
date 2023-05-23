@@ -2,7 +2,7 @@
 ![mockup image](media/mockup.png)
 *Accessories for everybody's best friend*
 
-**[Live demo](https://pawfect-sm.onrender.com/)**
+**[Live demo](https://pawfect.onrender.com/)**
 
 ---
 [**Index**](#up)  
